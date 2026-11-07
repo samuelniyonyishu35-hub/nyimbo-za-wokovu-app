@@ -6,7 +6,7 @@
 import { existsSync, readFileSync } from "node:fs";
 import { join } from "node:path";
 
-export const DEFAULT_APP_NAME = "Grok App";
+export const DEFAULT_APP_NAME = "NYIMBO ZA WOKOVU";
 export const OG_SERVICE_URL_DEFAULT = "https://og.grok.me";
 export const OG_SITE_REL_PATH = "src/lib/og/site.json";
 
@@ -162,7 +162,7 @@ export function renderWebManifest(hostHeader) {
   return JSON.stringify(
     {
       name,
-      short_name: name,
+      short_name: "NYIMBO",
       id: "/",
       start_url: "/",
       scope: "/",
@@ -170,6 +170,16 @@ export function renderWebManifest(hostHeader) {
       background_color: "#000000",
       theme_color: "#000000",
       icons: [
+        {
+          src: "/icon-192.png",
+          sizes: "192x192",
+          type: "image/png",
+        },
+        {
+          src: "/icon-512.png",
+          sizes: "512x512",
+          type: "image/png",
+        },
         {
           src: "/__grok/icon-180.png",
           sizes: "180x180",
@@ -209,7 +219,7 @@ export function readGrokProjectId() {
 
 export function readGrokExtensionsEnabled() {
   const fromProcess = typeof process !== "undefined" ? process.env?.VITE_GROK_EXTENSIONS : "";
-  return String(fromProcess ?? "").trim() !== "0";
+  return String(fromProcess ?? "").trim() === "1";
 }
 
 export function readXCreator() {

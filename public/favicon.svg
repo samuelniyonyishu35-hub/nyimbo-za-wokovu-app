@@ -1,7 +1,27 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32">
-  <rect width="32" height="32" rx="7" fill="#102623"/>
-  <path fill="#0d8c82" d="M5.2 10.4c2.9.55 6.2 1 10.8 1s7.9-.45 10.8-1c.28-.05.5.16.5.44v11.7c0 .3-.26.54-.56.6-2.9.52-6.3.96-10.74.96s-7.84-.44-10.74-.96c-.3-.06-.56-.3-.56-.6V10.84c0-.28.22-.49.5-.44z"/>
-  <path fill="#e6f3f1" d="M7.1 11.7c2.4.42 5.1.78 8.9.78s6.5-.36 8.9-.78c.2-.04.36.12.36.32v9.9c0 .22-.18.4-.4.44-2.35.4-5.1.72-8.86.72s-6.5-.32-8.86-.72c-.22-.04-.4-.22-.4-.44v-9.9c0-.2.16-.36.36-.32z"/>
-  <rect x="15.2" y="12.4" width="1.6" height="10.2" rx="0.3" fill="#0d8c82"/>
-  <path fill="#ffffff" fill-opacity="0.62" d="M7.7 12.15c2.15.32 4.7.55 7.5.55v1.05c-2.85 0-5.5-.24-7.7-.58-.12-.02-.22-.14-.18-.26.03-.1.2-.12.38-.06z"/>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#123b32"/>
+      <stop offset="1" stop-color="#061b19"/>
+    </linearGradient>
+    <linearGradient id="gold" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#fff0a6"/>
+      <stop offset="1" stop-color="#d6a83e"/>
+    </linearGradient>
+    <linearGradient id="book" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#ffffff"/>
+      <stop offset="1" stop-color="#b8e9d9"/>
+    </linearGradient>
+  </defs>
+  <rect width="512" height="512" rx="112" fill="url(#bg)"/>
+  <circle cx="256" cy="190" r="132" fill="#d6a83e" opacity=".08"/>
+  <path d="M256 72 L256 125 M234 98 L278 98" stroke="url(#gold)" stroke-width="15" stroke-linecap="round"/>
+  <path d="M256 132 L256 184" stroke="url(#gold)" stroke-width="12" stroke-linecap="round"/>
+  <path d="M256 184 C210 151 145 151 105 174 L105 345 C153 320 211 327 256 362 Z" fill="url(#book)" stroke="#d6a83e" stroke-width="9" stroke-linejoin="round"/>
+  <path d="M256 184 C302 151 367 151 407 174 L407 345 C359 320 301 327 256 362 Z" fill="url(#book)" stroke="#d6a83e" stroke-width="9" stroke-linejoin="round"/>
+  <path d="M256 184 L256 362" stroke="#c69b3d" stroke-width="7"/>
+  <path d="M132 218 Q188 196 225 221 M132 255 Q188 233 225 258 M132 292 Q188 270 225 295" fill="none" stroke="#3a8874" stroke-width="8" stroke-linecap="round"/>
+  <path d="M287 221 Q324 196 380 218 M287 258 Q324 233 380 255 M287 295 Q324 270 380 292" fill="none" stroke="#3a8874" stroke-width="8" stroke-linecap="round"/>
+  <path d="M256 380 L256 414" stroke="url(#gold)" stroke-width="7" stroke-linecap="round"/>
+  <path d="M206 414 Q256 435 306 414" fill="none" stroke="url(#gold)" stroke-width="7" stroke-linecap="round"/>
 </svg>
